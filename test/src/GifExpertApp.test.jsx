@@ -4,10 +4,11 @@ import { GifExpertApp } from '../../src/GifExpertApp';
 
 describe('Pruebas en <GifExpertApp />', () => {
 
-    test('should ', () => {
+    test('debe mostrar el titulo', () => {
         
         render( <GifExpertApp /> );
-        screen.debug();
+
+        expect( screen.getByRole('heading')).toBeTruthy();
 
     });
 
